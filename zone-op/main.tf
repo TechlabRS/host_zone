@@ -8,9 +8,9 @@ data "terraform_remote_state" "cr_zone" {
 
 # You can now access the Route53 zone ID like this:
 output "zn_id"{
- value = data.terraform_remote_state.cr_zone.outputs.zone_id
+ value = data.terraform_remote_state.cr_zone.outputs.zn-op
 }
 
 output "ky_id"{
- value = data.terraform_remote_state.cr_zone.outputs.myky
+ value = data.terraform_remote_state.cr_zone.outputs.ky-op
 }
